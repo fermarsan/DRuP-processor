@@ -12,7 +12,7 @@ _DRuP_ is an 4-bit Harvard accumulator-based processor with a data memory of 16 
 
 ## Finite state machine
 
-````dot {cmd=true}
+```dot
 digraph G {
   reset -> fetch
   fetch -> decode
@@ -27,3 +27,4 @@ digraph G {
   decode -> "skip if"
   "skip if" -> fetch
 }
+```
